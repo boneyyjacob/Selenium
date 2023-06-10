@@ -237,4 +237,9 @@ public class DemoWebShop
 		Object[][]data= {{"j.doe3@gmail.com", "sdoepw"},{"s.j@gmail.com", "qwerty"}};
 		return data;	
 	}
+	@Test
+	public void TC_007_verifyLoginWithParameters()
+	{
+		
+	}
 }
