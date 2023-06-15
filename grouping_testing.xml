@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Parameter Suite">
+	<test thread-count="5" name="Firefox Test">
+		<parameter name="browser" value="Firefox" />
+		<parameter name="base_url" value="https://demowebshop.tricentis.com/" />
+		<parameter name="uName" value="j.doe3@gmail.com" />
+		<parameter name="pWord" value="sdoepw" />
+		<groups>
+			<run>
+				<include name="Regression"/>
+				<include name="Sanity"/>
+				<exclude name="Smoke"/>
+			</run>
+		</groups>
+		<classes>
+			<class name="seleniumcommands.DemoWebShop">
+				<!-- <methods>
+					<include name="TC_001_verifyObsquraTitle"/>
+					<include name="TC_002_verifyLogin" />
+					<exclude name="TC_003_verifyRegistration" />
+					<include name="TC_004_verifyTitleFromExcelSheet" />
+					<exclude name="TC_005_verifyRegistrationFromExcelSheet" />
+					<include name="TC_006_verifyLoginWithInvalidData" />
+					<include name="TC_007_verifyRegsitrationUsingRandomGenerator" />
+					<include name="TC_008_verifyLoginWithValidData" />
+					<include name="TC_009_verifyLoginWithParameters" />
+				</methods>-->
+			</class>
+		</classes>
+	</test>
+ <!--
+	Test -->
+</suite> <!--
+Suite -->

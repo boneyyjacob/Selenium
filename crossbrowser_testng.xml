@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Parameter Suite">
+	<test thread-count="5" name="Firefox Test">
+		<parameter name="browser" value="Firefox" />
+		<parameter name="base_url" value="https://demowebshop.tricentis.com/" />
+		<parameter name="uName" value="j.doe3@gmail.com" />
+		<parameter name="pWord" value="sdoepw" />
+		<classes>
+			<class name="seleniumcommands.DemoWebShop">
+				<methods>
+					<exclude name="TC_002_verifyLogin" />
+					<exclude name="TC_003_verifyRegistration" />
+					<exclude name="TC_004_verifyTitleFromExcelSheet" />
+					<exclude name="TC_005_verifyRegistrationFromExcelSheet" />
+					<exclude name="TC_006_verifyLoginWithInvalidData" />
+					<exclude name="TC_007_verifyRegsitrationUsingRandomGenerator" />
+					<exclude name="TC_008_verifyLoginWithValidData" />
+					<include name="TC_009_verifyLoginWithParameters" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="Chrome Test">
+		<parameter name="browser" value="Chrome" />
+		<parameter name="base_url" value="https://demowebshop.tricentis.com/" />
+		<parameter name="uName" value="j.doe@gmail.com" />
+		<parameter name="pWord" value="sdoepwq" />
+		<classes>
+			<class name="seleniumcommands.DemoWebShop">
+				<methods>
+					<include name="TC_010_verifyLoginWithInvalidParameters" />
+				</methods>
+			</class>
+		</classes>
+	</test> <!--
+	Test -->
+</suite> <!--
+Suite -->

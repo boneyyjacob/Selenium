@@ -5,9 +5,18 @@
     <classes>
       <class name="seleniumcommands.DemoWebShop">
         <methods>
+          <include name="Tc_005_verifyRegistrationFromExcelSheet"/>
+          <include name="TC_006_verifyLoginWithInvalidData"/>
           <include name="tearDown"/>
-          <include name="TC_006_verifyLoginWithValidData" invocation-numbers="0 1"/>
+          <include name="TC_006_verifyLoginWithValidData"/>
+          <include name="TC_003_verifyRegistration"/>
+          <include name="TC_004_verifyTitleFromExcelSheet"/>
           <include name="setup"/>
+          <include name="TC_001_verifyObsquraTitle"/>
+          <include name="TC_009_verifyLoginWithInvalidParameters"/>
+          <include name="TC_002_verifyLogin"/>
+          <include name="TC_007_verifyRegsitrationUsingRandomGenerator"/>
+          <include name="TC_008_verifyLoginWithParameters"/>
         </methods>
       </class> <!-- seleniumcommands.DemoWebShop -->
     </classes>
